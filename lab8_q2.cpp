@@ -2,6 +2,16 @@
 #include<iostream>
 using namespace std;
 
+
+
+// function printing maximum and minimum value of array
+void maxmin(int a[],int n)
+{ cout<<" The maximum value in the array is "<<a[n-1]<<endl;
+  cout<<" The minimum value in the array is "<<a[0]<<endl;
+}
+
+
+
 //function for finding the mean
 void mean(int a[],int n)
 {	int s=0;
@@ -17,7 +27,7 @@ void mean(int a[],int n)
 	float m=float(s)/float(n);
 	
 	//printing mean 
-	cout<<"\n mean of the elements of the array is "<< m<<endl;
+	cout<<" mean of the elements of the array is "<< m<<endl;
 }
 
 
@@ -42,40 +52,39 @@ void median (int a[],int n)
 	//printing median
 	if (n%2==0)
    	{	float m=(float(a[n/2])+float (a[(n/2)-1]))/2;
-  		cout<<"\n median = "<<m;
+  		cout<<" median = "<<m<<endl;
 	}
     	else
-	cout<<"\n median = "<<a[n/2];
+	cout<<" median = "<<a[n/2]<<endl;
 }
 
-// function printing maximum and minimum value of array
-void maxmin(int a[],int n)
-{ cout<<"\n The maximum value in the array is "<<a[n-1];
-  cout<<"\n The minimum value in the array is "<<a[0];
-}
+
 
 //main function 
 int main()
 {	int a[10],n;
  	
 	//ask user for the limit
-	cout<<"\n Enter number of elements in the array ";
+	cout<<" Enter number of elements in the array "<<endl;
  	cin>>n;
  	
 	//ask user for array elements 
 	cout<<"\n Enter array elements ";
  	for(int i=0;i<n;i++)
   	cin>>a[i];
+ 
+ 
+        //call maximumn function 
+	maxmin(a,n);
  	
 	// call mean function 
 	mean(a,n);
 	//call median function
 	median(a,n);
-	//call maxmin function 
-	maxmin(a,n);
+	
 	
 	return 0;
 }
-//end of program
+
 
 
