@@ -11,15 +11,16 @@ int sumarr(int a[],int n)
  	s+=a[i];
 	
 	//printing sum 
-	cout<<"\n Sum of the elements of the array is "<<s;
+	cout<<" Sum of the elements of the array is "<<s <<endl;
 	return 0;
 }
+
 //main function 
 int main()
 {	int a[10],n;
  	
-	//ask user for the limit
-	cout<<"\n Enter number of elements in the array ";
+	//ask user the number of elements in the array
+	cout<<" Enter number of elements in the array "<<endl;
  	cin>>n;
  	
 	//ask user for array elements 
@@ -31,6 +32,6 @@ int main()
 	sumarr(a,n);
 	return 0;
 }
-//end of program
+
 
 
