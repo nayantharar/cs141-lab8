@@ -4,7 +4,10 @@ using namespace std;
 
 //function for finding the mean
 void mean(int a[],int n)
-{	int s=0;//varible for mean
+{	int s=0;
+  
+ 
+ //varible for mean
 	
 	//loop for finding the sum of array elements
 	for (int i=0;i<n;i++)
@@ -16,6 +19,8 @@ void mean(int a[],int n)
 	//printing mean 
 	cout<<"\n mean of the elements of the array is "<< m<<endl;
 }
+
+
 // function printing the median of the array elements
 
 void median (int a[],int n)
